@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Document</title>
+
+<style>
+.wrapper{
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.pokemon{
+  border: 1px solid darkgreen;
+  float: left
+}
+
+.btnFiltro{
+  width: 50px;
+  font-size: 18px;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="pokemon">
+            <div class="nomePokemon">Golden</div>
+            <div class="tipoPokemon">Água</div>
+        </div>
+        <div class="pokemon">
+            <div class="nomePokemon">Starmie</div>
+            <div class="tipoPokemon">Água</div>
+        </div>
+        <div class="pokemon">
+            <div class="nomePokemon">Politoed</div>
+            <div class="tipoPokemon">Água</div>
+        </div>
+        <div class="pokemon">
+            <div class="nomePokemon">Charmilion</div>
+            <div class="tipoPokemon">Fogo</div>
+        </div>
+    </div>
+    <div class="wrapper">
+    <input type="Button" name="filtro" value="fitro" class="btnFiltro" id="btnFiltro">
+    </div>
+
+</body>
+</html>
+
+<script>
+
+    
+    document.getElementById("btnFiltro").addEventListener("click", function(){
+        //window.alert("funfou");
+  
+        var tipoPokemon = document.getElementsByClassName("tipoPokemon");
+        var nomePokemon = document.getElementsByClassName("nomePokemon");
+    
+        for(i = 0; i < tipoPokemon.length; i++){
+            //window.alert(tipoPokemon[i].innerHTML);
+            //console.log(tipoPokemon[i].innerHTML);
+
+            var tipoPokemonI = tipoPokemon[i].innerHTML;
+            //console.log("Tipo PokemonI: " + tipoPokemonI);
+            //window.alert(tipoPokemonI);
+
+            console.log(typeof tipoPokemonI);
+
+            if(tipoPokemonI == "Água"){
+                //window.alert(nomePokemon[i].innerHTML);
+                //console.log("Tipo PokemonI: " + tipoPokemonI);
+                window.alert(nomePokemon[i].innerHTML);
+            }
+        };
+  
+    });
+</script>
