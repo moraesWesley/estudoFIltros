@@ -1,0 +1,14 @@
+.wrapper{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+  }
+  
+.pokemon{
+    border-bottom: 1px solid darkseagreen;
+}
+
+.tipoPokemon{
+    margin-bottom: 10px;
+}
+  
